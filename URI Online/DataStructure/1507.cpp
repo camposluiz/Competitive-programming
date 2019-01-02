@@ -3,9 +3,9 @@
 
 using namespace std;
 
-bool is_subpalavra(string v, string k);
+bool is_subsequencia(string v, string k);
 
-bool is_subpalavra(string v, string k) {
+bool is_subsequencia(string v, string k) {
 
     int aux1 = 0;  // Auxiliar para o k
     int aux2 = 0;  // Auxiliar para o v
@@ -42,7 +42,7 @@ int main() {
         for (j = 0; j < Q; j++) {
 
             cin >> R;
-            if (is_subpalavra(S, R))
+            if (is_subsequencia(S, R))
                 cout << "Yes" << endl;
             else
                 cout << "No" << endl;
