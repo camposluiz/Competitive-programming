@@ -10,14 +10,14 @@ long long int exponenciacao_rapida(long long int base, long long int e) {
 	
 	long long int resul = 1;
     
-    while (e > 0) {
+    	while (e > 0) {
     	
-    	if (e % 2 == 1) 	// Representação binária possui 1 no ultimo bit
+    		if (e % 2 == 1)   // RepresentaÃ§Ã£o binÃ¡ria possui 1 no ultimo bit
 			resul = (resul * base) % M;
 
 		base = (base * base) % M;
 		e /= 2;			   
-    }
+    	}
 
 	return resul;
 
