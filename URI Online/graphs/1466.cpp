@@ -72,18 +72,18 @@ void Bst::imprimirNivel() {
 	fila.push_back(this->raiz);
 
 	int i = 0;
-    while (!fila.empty()) {
+    	while (!fila.empty()) {
     	
-    	atual = fila.front();
-    	fila.pop_front();
+    		atual = fila.front();
+    		fila.pop_front();
 
-    	cout << atual->chave;
-    	if (i < this->len - 1) cout << " "; i++;
+    		cout << atual->chave;
+    		if (i < this->len - 1) cout << " "; i++;
                       
-    	if (atual->esquerda != nullptr) fila.push_back(atual->esquerda);
-    	if (atual->direita != nullptr) fila.push_back(atual->direita);
-    }
-    cout << endl;
+    		if (atual->esquerda != nullptr) fila.push_back(atual->esquerda);
+    		if (atual->direita != nullptr) fila.push_back(atual->direita);
+    	}
+    	cout << endl;
 }
 
 int main() {
